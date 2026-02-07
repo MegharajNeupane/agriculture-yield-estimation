@@ -1,10 +1,10 @@
-from src.ingest import load_data
+from src.inject import load_data
 from src.preprocess import preprocess_pipeline
 from src.train import train_model
 
 def run_pipeline():
     # 1. Ingest
-    DATA_PATH = "data/raw/agricultural_yield_prediction.csv"
+    DATA_PATH = "data/raw/Agri_yield_prediction.csv"
     df = load_data(DATA_PATH)
     
     # 2. Preprocess
